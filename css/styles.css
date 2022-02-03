@@ -19,7 +19,7 @@ html {
 
 body {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1200px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
@@ -93,21 +93,15 @@ footer {
   background-color: rgb(247, 237, 237);
 }
 
-.footer__nav {
-  font-family: 'Staatliches', cursive;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer__nav a:hover {
-  color: rgb(216, 184, 201);
+hr {
+  margin-top: 40px;
 }
 
 /* =======================
   Class selector settings
 ========================== */
 
-.hero img{
+.hero img {
   background-color: rgb(211, 200, 200);
   border-radius: 10%;
 }
@@ -137,8 +131,18 @@ address {
   padding: 5% 2%;
 }
 
-hr {
-  margin-top: 40px;
+.footer__nav {
+  font-family: 'Staatliches', cursive;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav a:hover {
+  color: rgb(216, 184, 201);
+}
+
+.footer__nav nav {
+  display: none;
 }
 
 /* =======================
@@ -197,6 +201,11 @@ hr {
   .footer__nav>a {
     display: none;
   }
+
+  .footer__nav nav {
+    display: inline;
+  }
+
   .footer__nav nav {
     width: 50%;
   }
@@ -212,4 +221,31 @@ hr {
   }
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+  .hero p {
+    padding-left: 0%;
+  }
+
+  .nav-bar nav {
+    width: 50%;
+    padding-top: 10px;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero p,
+  .footer__contact p {
+    font-size: 2rem;
+  }
+
+  .portfolio {
+    justify-content: center;
+  }
+
+  article {
+    width: 32%;
+  }
+}
