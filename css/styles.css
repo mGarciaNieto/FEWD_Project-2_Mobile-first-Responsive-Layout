@@ -1,0 +1,157 @@
+/* =======================
+  General settings
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =======================
+  Element selector settings
+========================== */
+
+html {
+  margin: 10px 0;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1024px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+header,
+main,
+footer {
+  padding: 2%;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(252, 218, 218);
+  margin-bottom: 50px;
+}
+
+header img {
+  width: 100%;
+  padding: 20px 80px;
+}
+
+header p {
+  padding: 0 2% 15%;
+}
+
+header nav a {
+  display: block;
+  background-color: whitesmoke;
+  margin: 10px 0;
+}
+
+header nav a:hover {
+  background-color: rgb(24, 23, 22);
+  color: whitesmoke;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+main h2 {
+  padding: 0 20% 10%;
+}
+
+main h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+main article {
+  padding: 10% 0;
+}
+
+h1,
+h2,
+ul,
+footer h3 {
+  font-family: 'Staatliches', cursive;
+}
+
+footer {
+  background-color: rgb(247, 237, 237);
+}
+
+.footer__nav {
+  font-family: 'Staatliches', cursive;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav a:hover {
+  color: rgb(216, 184, 201);
+}
+
+/* =======================
+  Class selector settings
+========================== */
+
+.skills {
+  background-color: rgb(57, 43, 47);
+  margin: 40px -2% -2%;
+  padding: 40px 0;
+  color: whitesmoke;
+}
+
+.skills img {
+  padding: 5%;
+}
+
+.footer__contact p,
+address {
+  padding: 2% 0;
+}
+
+.footer__contact h2 {
+  padding: 15% 0 5%;
+}
+
+.footer__nav {
+  padding: 5% 2%;
+}
+
+hr {
+  margin-top: 40px;
+}
+
+/* =======================
+  Media Queries
+========================== */
+
+@media (min-width: 768px) {
+  header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav ul li {
+    padding: 2%;
+  }
+
+  header nav ul li a {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1024px) {}
