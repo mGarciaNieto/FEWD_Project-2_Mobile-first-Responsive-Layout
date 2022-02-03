@@ -44,6 +44,7 @@ header img {
 }
 
 header p {
+  margin-top: 20px;
   padding: 0 2% 15%;
 }
 
@@ -106,6 +107,11 @@ footer {
   Class selector settings
 ========================== */
 
+.hero img{
+  background-color: rgb(211, 200, 200);
+  border-radius: 10%;
+}
+
 .skills {
   background-color: rgb(57, 43, 47);
   margin: 40px -2% -2%;
@@ -113,7 +119,8 @@ footer {
   color: whitesmoke;
 }
 
-.skills img {
+.skills img,
+p {
   padding: 5%;
 }
 
@@ -151,6 +158,57 @@ hr {
 
   header nav ul li a {
     background-color: transparent;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .hero img {
+    width: 50%;
+  }
+
+  .hero p {
+    text-align: left;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main h2 {
+    padding: 0 5%;
+  }
+
+  main article {
+    padding: 5% 0.5%;
+  }
+
+  article {
+    width: 50%;
+  }
+
+  .footer__contact p {
+    padding: 2% 5%;
+  }
+
+  .footer__nav>a {
+    display: none;
+  }
+  .footer__nav nav {
+    width: 50%;
+  }
+
+  .footer__nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__nav ul li a {
+    padding: 10%;
   }
 }
 
